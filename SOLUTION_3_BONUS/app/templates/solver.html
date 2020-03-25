@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+    <div class="home_text" align="center" style="padding-top: 30px;">
+        <h3>Решатель квадратного уравнения</h3>
+        <span>Для решения уравнения вам нужно вписать значения коэффицентов A, B, C</span><br>
+        <span>и нажать кнопку "Решить"</span><br><br>
+
+        <form action="" method="post">
+            {{ form.csrf_token() }}
+            {{ form.hidden_tag() }}
+
+            {{ form.a_value(size=5, placeholder="Coeff A") }}<span>X^2 + </span>
+            {{ form.b_value(size=5, placeholder="Coeff B") }}<span>X + </span>
+            {{ form.c_value(size=5, placeholder="Coeff C") }}<span> = 0</span><br><br>
+
+            {% if solved %}
+                {% if radicals %}
+                    <span style="text-size: 33px;"><b>X1</b> = <b>{{ radicals[0] }}</b> <b>X2</b> = <b>{{ radicals[1] }}</b></span><br><br>
+                {% else %}
+                    <span><b>Нет действительных корней</b></span><br><br>
+                {% endif %}
+            {% endif %}
+            {% if error %}
+                <span><b>Данные введены некорректно</b></span><br><br>
+            {% endif %}
+            {{ form.submit(class_="submit") }}
+        </form>
+    </div>
+
+{% endblock %}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    {% if title %}
+        <title>{{ title }}</title>
+    {% else %}
+        <title> QuadraticEquation </title>
+    {% endif %}
+    <link rel="shortcut icon" href="{{ url_for('static', filename='images/favicon.png') }}" type="image/jpg">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+    <link href="https://fonts.googleapis.com/css?family=Monofett|Monoton|Montserrat|Share+Tech+Mono&display=swap&subset=cyrillic-ext" rel="stylesheet">
+
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <div class="logo"><a href="{{ url_for('home') }}"><img class="logo_gif" src="./static/images/favicon.png"></a></div>
+                <nav class="nav">
+                    <ul class="menu">
+                        <li><a class="nav__link" href="{{ url_for('home') }}">О проекте</a></li>
+                        <li><a class="nav__link" href="{{ url_for('solver') }}">Решатель</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    <header>
+{% block content %} {% endblock %}
+</body>
+</html>

@@ -1,0 +1,194 @@
+body{
+	margin: 0;
+	font-family: 'Share Tech Mono', monospace;
+
+	font-size: 15px;
+	color:#333;
+	line-height: 1.6;
+
+	/*background: url("../images/main.jpg") center no-repeat;
+	background-size: cover;
+	-webkit-background-size: cover;
+	*/
+	background-color: #fff;
+}
+*,
+*:before
+*:after{
+	box-sizing: border-box;
+}
+
+/* Container */
+
+.container{
+	display: block;
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+h1, h2, h3, h4, h5, h6{
+	margin: 0;
+	text-transform: uppercase;
+}
+
+/* logo */
+.logo_gif{
+	width: 75px;
+	height: 75px;
+}
+
+/* Header */
+.header{
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 1000;
+	width: 100%;
+}
+
+.header__inner{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+/* Navigation */
+.nav{
+	text-transform: uppercase;
+	font-size: 16px;
+}
+
+.nav__link{
+	display: inline-block;
+	vertical-align: top;
+	margin: 0 10px;
+	position: relative;
+
+	color: #000000;
+	text-decoration: none;
+	transition: color .2s linear;
+	font-family: 'Share Tech Mono', monospace;
+	cursor:pointer;
+}
+
+.nav__link:hover{
+	 color: black;
+	 background-color: blue;
+}
+
+.nav__link:after{
+	content: "";
+	display: block;
+	width: 100%;
+	height: 3px;
+	display: none;
+
+	background-color: #fff;
+	opacity: 0;
+
+	position: absolute;
+	top: 100%;
+	left: 0;
+	z-index: 1;
+
+	transition: opacity .2s linear;
+}
+
+.nav__link:hover:after{
+	opacity: 1;
+}
+
+ul.menu > li {
+    float: left;
+    position: relative;
+}
+
+ul.menu > li > a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+}
+
+ul {
+    display: block;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+ul:after {
+    display: block;
+    content: ' ';
+    clear: both;
+    float: none;
+}
+
+ul.menu > li:hover > ul.submenu {
+    display: block;
+}
+
+/* intro */
+.intro{
+	width: 100%;
+	height: 100vh%;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.intro_title{
+	font-size: 25px;
+	font-weight: 700;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+/* Button */
+.submit{
+	font-family: 'Share Tech Mono', monospace;
+	text-transform: uppercase;
+}
+
+.submit:hover{
+	 color: black;
+	 background-color: blue;
+}
+
+.submit:active{
+	color: rgb(255, 0, 0);
+	background-color: #000000;
+}
+
+.submit_sex:hover{
+	color: #fff;
+	background-color: #000000;
+}
+
+.submit_team:hover{
+	color: #fff;
+	background-color: #000000;
+	flex-direction: column;
+	justify-content: center;
+
+}
+
+.submit_adding{
+	font-family: 'Share Tech Mono', monospace;
+	text-transform: uppercase;
+	position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.submit_adding:hover{
+	 color: #fff;
+	 background-color: #000000;
+}
+
+.submit_adding:active{
+	color: rgb(255, 0, 0);
+	background-color: #000000;
+}
