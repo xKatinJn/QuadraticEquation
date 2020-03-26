@@ -63,5 +63,7 @@ response:
 
 Фото
 =====
-![Главная](https://imgur.com/drvlSNs)
-![Страница с решателем кв. уравнения](https://imgur.com/CB7bePj)
+![Главная](https://i.imgur.com/drvlSNs.png)
+![Страница с решателем кв. уравнения](https://i.imgur.com/CB7bePj.png)
+![Штатное использование](https://i.imgur.com/tLhJ3vz.png)
+![Ошибка](https://i.imgur.com/QtbMmKy.png)
