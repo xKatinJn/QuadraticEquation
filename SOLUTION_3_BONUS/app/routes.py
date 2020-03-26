@@ -2,7 +2,7 @@ from flask import render_template, url_for
 
 from SOLUTION_3_BONUS.app.forms import SolverForm
 from SOLUTION_3_BONUS.app import app
-from SOLUTION_3_BONUS.app.scripts.QudraticSolver import QuadraticEquation
+from SOLUTION_3_BONUS.app.scripts.QuadraticSolver import QuadraticEquation
 
 
 @app.route('/')

@@ -1,7 +1,7 @@
 from flask import jsonify, request
 
 from SOLUTION_3_BONUS.app.api import bp
-from SOLUTION_3_BONUS.app.scripts.QudraticSolver import QuadraticEquation
+from SOLUTION_3_BONUS.app.scripts.QuadraticSolver import QuadraticEquation
 
 
 @bp.route('/solve', methods=['GET'])
