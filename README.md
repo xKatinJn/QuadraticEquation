@@ -25,7 +25,7 @@ SOLUTION #3
 
 **Роуты: '/', '/home', '/solver'.**
 
-**Методы API: solve?a={A coeff}&b={B coeff}&{C coeff}**
+**Методы API: solve?a={A coeff:int||float}&b={B coeff:int||float}&{C coeff:int||float}**
 
 Пример запросов и ответов по API:
 
